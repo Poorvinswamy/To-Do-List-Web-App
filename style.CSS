@@ -1,195 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechNova | Responsive Landing Page</title>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+body{
+    background:#f4f4f4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+.container{
+    background:white;
+    padding:25px;
+    width:400px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head>
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    color:#333;
+}
 
-<body>
+.input-section{
+    display:flex;
+    gap:10px;
+}
 
-<!-- ================= HEADER ================= -->
+input{
+    flex:1;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
 
-<header>
-    <div class="logo">
-        <i class="fa-solid fa-laptop-code"></i>
-        TechNova
-    </div>
+button{
+    padding:10px 15px;
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+button:hover{
+    background:#0056b3;
+}
 
-<!-- ================= HERO ================= -->
+ul{
+    list-style:none;
+    margin-top:20px;
+}
 
-<section class="hero" id="home">
+li{
+    background:#eee;
+    margin-bottom:10px;
+    padding:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-radius:5px;
+}
 
-<div class="hero-text">
+.completed{
+    text-decoration:line-through;
+    color:gray;
+}
 
-<h1>
-Build Amazing Websites
-With HTML & CSS
-</h1>
+.delete-btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:5px 10px;
+    border-radius:5px;
+    cursor:pointer;
+}
 
-<p>
-Learn modern web development and create beautiful,
-responsive websites that work on every device.
-</p>
-
-<a href="#about" class="btn">
-Get Started
-</a>
-
-</div>
-
-<div class="hero-image">
-
-<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800"
-alt="Hero Image">
-
-</div>
-
-</section>
-
-<!-- ================= ABOUT ================= -->
-
-<section id="about" class="about">
-
-<h2>About Us</h2>
-
-<p>
-TechNova creates modern, responsive, and attractive websites
-using the latest web technologies.
-</p>
-
-<div class="features">
-
-<div class="feature-box">
-<i class="fa-solid fa-code"></i>
-<h3>Clean Code</h3>
-<p>Simple, readable and optimized HTML & CSS.</p>
-</div>
-
-<div class="feature-box">
-<i class="fa-solid fa-mobile-screen"></i>
-<h3>Responsive</h3>
-<p>Looks perfect on mobile, tablet and desktop.</p>
-</div>
-
-<div class="feature-box">
-<i class="fa-solid fa-rocket"></i>
-<h3>Fast Performance</h3>
-<p>Lightweight and optimized webpages.</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= SERVICES ================= -->
-
-<section id="services" class="services">
-
-<h2>Our Services</h2>
-
-<div class="service-container">
-
-<div class="service-card">
-<i class="fa-solid fa-laptop-code"></i>
-<h3>Web Development</h3>
-<p>
-Modern websites using HTML, CSS and JavaScript.
-</p>
-</div>
-
-<div class="service-card">
-<i class="fa-solid fa-palette"></i>
-<h3>UI/UX Design</h3>
-<p>
-Beautiful interfaces with user-friendly layouts.
-</p>
-</div>
-
-<div class="service-card">
-<i class="fa-solid fa-mobile-screen-button"></i>
-<h3>Responsive Design</h3>
-<p>
-Fully responsive websites for every screen size.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= CONTACT ================= -->
-
-<section id="contact" class="contact">
-
-<h2>Contact Us</h2>
-
-<p>
-We'd love to hear from you.
-</p>
-
-<div class="contact-box">
-
-<div>
-<i class="fa-solid fa-envelope"></i>
-technova@gmail.com
-</div>
-
-<div>
-<i class="fa-solid fa-phone"></i>
-+91 9876543210
-</div>
-
-<div>
-<i class="fa-solid fa-location-dot"></i>
-Bengaluru, Karnataka
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-<div class="social">
-
-<a href="#"><i class="fab fa-facebook"></i></a>
-
-<a href="#"><i class="fab fa-instagram"></i></a>
-
-<a href="#"><i class="fab fa-linkedin"></i></a>
-
-<a href="#"><i class="fab fa-github"></i></a>
-
-</div>
-
-<p>
-© 2026 TechNova. All Rights Reserved.
-</p>
-
-</footer>
-
-</body>
-</html>
+.delete-btn:hover{
+    background:darkred;
+}
